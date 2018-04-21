@@ -1,0 +1,29 @@
+1) Install the XRDP Remote Desktop Server software
+    a. sudo apt-get install xrdp 
+
+2) Pick Your Favorite Desktop Environment to Install or Install All
+
+    a) Install the Gnome Desktop
+       sudo apt-get install gnome-session-fallback
+       echo "gnome-session --session=gnome-fallback" [greater than] ~/.xsession
+
+    b) Install Lubuntu Desktop
+       sudo apt-get install lubuntu-desktop
+       echo "lxsession -s Lubuntu -e LXDE" [greater than] ~/.xsession
+
+    c) Install the KDE Desktop
+       sudo apt-get install kde-workspace-data
+       sudo apt-get install kde-full
+       sudo apt-get install kde-desktop
+       sudo apt-get install kde-standard
+       sudo apt-get install kde-plasma-desktop
+       echo "startkde"  [greater than] ~/.xsession
+
+    d) Install Xubuntu Desktop or Xfce4
+       sudo apt-get install xubuntu-desktop
+       sudo apt-get install xfce4
+       echo "xfce4-session" [greater than] ~/.xsession
+
+4) Reset the xserver
+    a. sudo /etc/init.d/xrdp restart
+
