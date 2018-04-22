@@ -1,4 +1,4 @@
-1) Install the XRDP Remote Desktop Server software-load file --Branch setting Test
+1) Install the XRDP Remote Desktop Server software-load file --New Branch QA setting Test
     a. sudo apt-get install xrdp 
 
 2) Pick Your Favorite Desktop Environment to Install or Install All
